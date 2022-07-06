@@ -11,7 +11,7 @@ pipeline{
         stage('Build docker image and run'){
             steps{
                 script{
-                    bat 'docker-compose.yml up --build -d'
+                    bat 'docker-compose up --build -d'
                 }
             }
         }
